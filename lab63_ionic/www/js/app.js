@@ -8,10 +8,10 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('lab62', [
+angular.module('lab63', [
    'ionic',
-   'lab62.Controllers',
-   'lab62.Services'
+   'lab63.Controllers',
+   'lab63.Services'
 
   ])
 
@@ -33,18 +33,24 @@ angular.module('lab62', [
   $stateProvider
       .state('list', {
         url: '/',
-        templateUrl: 'list.html',
-        controller: 'lab62.ListController'
+        templateUrl: '/templates/list.html',
+        controller: 'lab63.ListController'
       })
       .state('view', {
         url: '/view',
-        templateUrl: 'view.html',
-        controller: 'lab62.ViewController'
+        templateUrl: '/templates/view.html',
+        controller: 'lab63.ViewController'
       })
       .state('userList', {
           url: '/list',
-          templateUrl: 'user_list.html',
-          controller: 'lab62.ListUserController'
+          templateUrl: '/templates/user_list.html',
+          controller: 'lab63.ListUserController'
+          //controller: 'lab62.ListUserController'
+      })
+      .state('productList', {
+          url: '/listProduct',
+          templateUrl: '/templates/product_list.html',
+          controller: 'lab63.ListProductController'
           //controller: 'lab62.ListUserController'
       });
 
